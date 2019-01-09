@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Draughts</title>
+    <link rel='stylesheet' href='style.css'>
+  </head>
+
+
+	<script src="./jquery-3.2.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/player.js"></script>
+    <script src='/draw-game.js'></script>
+
+  <body>
+
+
+
+    <div class='login-screen'>
+	<img src="images/Draughts_online.png" alt="DRAUGHTS">
+
+      <input class='login-screen__input' type='text' placeholder='Enter a username'>
+    </div>
+
+	  <div class="grid-container">
+		  <div> <canvas class="game-canvas" height="600" width="600"></canvas> </div>
+
+		  <div>
+			 <div class="grid-onlineText">
+			  <div><h1>Online</h1></div>
+				 <div><span class=circle></span></div>
+				</div>
+	
+			<table id="users">
+			  <tr>
+				<th>User name</th>
+				<th>User Role</th>
+				<th>Game Won</th>
+			  </tr>
+			</table>
+			 <div><h1>Leaderboard</h1></div>
+			<table id="topUsers" >
+				<tr>
+					<th>User name</th>
+					<th>Game Won</th>
+			  </tr>
+			</table>
+			</div>
+			
+
+
+
+		  
+		</div>
+
+      <!-- Chat arena -->
+    <div id = "game_window">
+	      <h1>Chat Arena</h1>
+	      <div class= 'chat-area'>
+ 	      <ul id="messages"></ul>
+	 </div>
+
+    <form action="">
+      <input id="chat" autocomplete="off" placeholder='input text' /><button class='button'>Send</button>
+    </form>
+		</div>
+		
+  </body>
+
+	<footer>
+	  <audio autoplay>
+		  <!-- source: https://www.bensound.com/royalty-free-music/track/slow-motion -->
+  		<source src="sound/bensound-slowmotion.mp3" type="audio/mp3">
+
+	  </audio>
+
+	</footer>
+</html>
